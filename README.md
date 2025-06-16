@@ -34,10 +34,10 @@ Follow these steps to set up and run the project locally:
 
 ### 1. Clone the Repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/MannPlayXZ47/Phishing-Domain-Detection.git
 cd Phishing-Domain-Detection
-\`\`\`
+```
 
 ---
 
@@ -45,17 +45,17 @@ cd Phishing-Domain-Detection
 
 #### On Windows:
 
-\`\`\`bash
+```bash
 python -m venv venv
 venv\Scripts\activate
-\`\`\`
+```
 
 #### On macOS/Linux:
 
-\`\`\`bash
+```bash
 python3 -m venv venv
 source venv/bin/activate
-\`\`\`
+```
 
 ---
 
@@ -63,26 +63,50 @@ source venv/bin/activate
 
 Make sure you have a `requirements.txt` file. Then run:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 To generate `requirements.txt` from your current environment:
 
-\`\`\`bash
+```bash
 pip freeze > requirements.txt
-\`\`\`
+```
 
 ---
 
 ### 4. Run the Flask App
 
-\`\`\`bash
+```bash
 python main.py
-\`\`\`
+```
 
 Then open your browser and go to:
 
-\`\`\`
+```
 http://127.0.0.1:5000
-\`\`\`
+```
+
+---
+
+## 📁 Project Structure
+
+```
+Phishing-Domain-Detection/
+│
+├── main.py
+├── README.md
+├── requirements.txt
+├── templates/
+│   └── index.html
+├── utils/
+│   ├── url_parser.py
+│   └── trained_models/
+│       └── phishing_model.pkl
+```
+
+---
+
+## 🙌 Contributing
+
+Pull requests are welcome! If you'd like to add improvements, feel free to fork and submit a PR.
