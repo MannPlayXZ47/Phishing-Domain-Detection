@@ -28,8 +28,61 @@ This project is a machine learning-based web application that detects phishing d
 
 ## 📦 Installation
 
-1. **Clone this repo:**
+Follow these steps to set up and run the project locally:
 
-```bash
+---
+
+### 1. Clone the Repository
+
+\`\`\`bash
 git clone https://github.com/MannPlayXZ47/Phishing-Domain-Detection.git
 cd Phishing-Domain-Detection
+\`\`\`
+
+---
+
+### 2. Create and Activate Virtual Environment
+
+#### On Windows:
+
+\`\`\`bash
+python -m venv venv
+venv\Scripts\activate
+\`\`\`
+
+#### On macOS/Linux:
+
+\`\`\`bash
+python3 -m venv venv
+source venv/bin/activate
+\`\`\`
+
+---
+
+### 3. Install Dependencies
+
+Make sure you have a `requirements.txt` file. Then run:
+
+\`\`\`bash
+pip install -r requirements.txt
+\`\`\`
+
+To generate `requirements.txt` from your current environment:
+
+\`\`\`bash
+pip freeze > requirements.txt
+\`\`\`
+
+---
+
+### 4. Run the Flask App
+
+\`\`\`bash
+python main.py
+\`\`\`
+
+Then open your browser and go to:
+
+\`\`\`
+http://127.0.0.1:5000
+\`\`\`
